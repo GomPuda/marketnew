@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="a/total1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="info-bar">
+        <div class="info-bar__time">20:55</div>
+        <div class="info-bar__icons">
+          <img src="a/chart-var.svg" alt="chart-bar" />
+          <img src="a/wifi.svg" alt="wifi" />
+          <img src="a/battery.svg" alt="chart-bar" />
+        </div>
+      </div>
+
+      <div class="menu-bar">
+        <div class="menu-bar__location">
+          <div>역삼1동</div>
+          <img src="a/arrow.svg" alt="아랫화살" />
+        </div>
+
+        <div class="menu-bar_icons">
+          <img src="a/search.svg" alt="돋보기" />
+          <img src="a/menu.svg" alt="3단메뉴" />
+          <img src="a/bell.svg" alt="알림" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <script src="index.js"></script>
+      <!-- <div class="item-list">
+        <div class="item-list__img">
+          <img src="a/image.svg" alt="이미지" />
+        </div>
+        <div class="item-list__info">
+          <div class="item-list__info-title">게이밍 pc 팝니다.</div>
+          <div class="item-list__info-meta">역삼동 19초전</div>
+          <div class="item-list__info-price">100만원</div>
+        </div>
+      </div>
+      <div class="item-list">
+        <div class="item-list__img">
+          <img src="a/image.svg" alt="이미지" />
+        </div>
+        <div class="item-list__info">
+          <div class="item-list__info-title">게이밍 pc 팝니다.</div>
+          <div class="item-list__info-meta">역삼동 19초전</div>
+          <div class="item-list__info-price">100만원</div>
+        </div>
+      </div>
+      <div class="item-list">
+        <div class="item-list__img">
+          <img src="a/image.svg" alt="이미지" />
+        </div>
+        <div class="item-list__info">
+          <div class="item-list__info-title">게이밍 pc 팝니다.</div>
+          <div class="item-list__info-meta">역삼동 19초전</div>
+          <div class="item-list__info-price">100만원</div>
+        </div>
+      </div>
+      <div class="item-list">
+        <div class="item-list__img">
+          <img src="a/image.svg" alt="이미지" />
+        </div>
+        <div class="item-list__info">
+          <div class="item-list__info-title">게이밍 pc 팝니다.</div>
+          <div class="item-list__info-meta">역삼동 19초전</div>
+          <div class="item-list__info-price">100만원</div>
+        </div>
+      </div>
+      <div class="item-list">
+        <div class="item-list__img">
+          <img src="a/image.svg" alt="이미지" />
+        </div>
+        <div class="item-list__info">
+          <div class="item-list__info-title">게이밍 pc 팝니다.</div>
+          <div class="item-list__info-meta">역삼동 19초전</div>
+          <div class="item-list__info-price">100만원</div>
+        </div>
+      </div>
+      <div class="item-list">
+        <div class="item-list__img">
+          <img src="a/image.svg" alt="이미지" />
+        </div>
+        <div class="item-list__info">
+          <div class="item-list__info-title">게이밍 pc 팝니다.</div>
+          <div class="item-list__info-meta">역삼동 19초전</div>
+          <div class="item-list__info-price">100만원</div>
+        </div>
+      </div> -->
+      <a class="wirte-btn" href="write.html">+ 글쓰기</a>
+      <div class="media-info-msg">화면 사이즈를 줄여주세요.</div>
+    </main>
+    <footer>
+      <div class="footer-block">
+        <div>
+          <div class="footer-icons">
+            <img src="a/home.svg" alt="홈" />
+          </div>
+          <div class="footer-icons_des">홈</div>
+        </div>
+        <div>
+          <div class="footer-icons">
+            <img src="a/document.svg" alt="서류" />
+          </div>
+          <div class="footer-icons_des">동네생활</div>
+        </div>
+        <div>
+          <div class="footer-icons">
+            <img src="a/location.svg" alt="위치" />
+          </div>
+          <div class="footer-icons_des">내 근처</div>
+        </div>
+        <div>
+          <div class="footer-icons">
+            <img src="a/chat.svg" alt="챗팅" />
+          </div>
+          <div class="footer-icons_des">채팅</div>
+        </div>
+        <div>
+          <div class="footer-icons">
+            <img src="a/user.svg" alt="유저" />
+          </div>
+          <a class="footer-icons_des" href="signup.html">회원가입</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- 진행순서 참고하면서 해보자
+1. 만들고 싶은 내용의 아이콘을 header, main, footer로 나눈다. 
+2. header 만들기, 각각의 색션을 나눠 진행한다 ex)<div class=""></div>
+3. 스타일 적용하기! 시간과 아이콘은 떨어져 있으니 먼저 css 스타일을 만들어서
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+}
+로 header.css를 만든후
+<link rel="stylesheet" href="실전예제/header.css" />를 통해 링크연결 시킨다.
+확인결과 양쪽이 떨어진 것을 확인할 수 있다.
+4. padding 를 주어 양쪽 공간을 조금 떨어지게 만든다. 10px 정도?
+5. hero icon를 통해 svg 파일 베터리, 차트, 와이파이 이미지를 가져온다.
+*해당 이미지들은 svg형식으로 스크랩해서 가져오면 된다. (heroicons 참고)
+6. 이미지를 끌어온다. <img src="경로/파일이름.svg" alt="별칭"/> 순으로 이미지를 끌어온다.
+7. 다시 header.css를 들어가 
+.info-bar__icons img {
+  width: 15px;
+}
+
+.info-bar__time {
+  font-size: 13px;
+  font-weight: bold;
+} 
+
+식으로 만들 화면에 폰트를 알맞게 넣는다.
+
+8. 같은 방식으로 
+menu_bar_icons 를 만들텐데 총 4개의 svg 이미지를 가져온다.
+
+9. 같은 방식으로 적용한다.
+단 여기서 중요한 포인트는
+.menu-bar_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-bar_icons img {
+  width: 25px;
+  margin-right: 10px;
+}
+해당 코딩이 들어가야된다는 점 img 파일 역시 알맞게 조정이 필요하고 건드려줘야 
+정확하게 글자 옆에 (역삼동 역화살표)가 들어가면서 정리된다.
+-->
+<!-- 같은 방식으로 진행하면 기본적인 틀을 잡을 수 있다. -->
