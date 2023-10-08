@@ -18,16 +18,18 @@ const handleSubmit = async (event) => {
 
   const div = document.querySelector("#info");
   if (checkPasssword()) {
-    div.innerText = "회원가입이 완료되었습니다";
-    div.style.color = "blue";
     const res = await fetch("/signup", {
       method: "post",
       body: formData,
     });
+    const data = await res.json();
+    if (data === "200") {
+      alert("회원가입에 성공하였습니다");
+      window.location.pathname = "/login.html";
+    }
   } else {
     div.innerHTML = "비밀번호가 같지 않습니다.";
     div.style.color = "red";
-    form.appendChild(div);
   }
 };
 
